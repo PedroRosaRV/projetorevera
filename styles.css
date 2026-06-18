@@ -256,10 +256,26 @@ button { cursor:pointer; border:none; background:none; font:inherit; }
   flex-shrink: 0;
 }
 
+.nav__logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
 .nav__logo-text em {
   font-family: var(--ff-heading);
   font-style: italic;
   font-weight: 400;
+}
+
+.nav__logo-sub {
+  font-size: 0.6rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--clr-gold);
+  font-style: normal;
+  font-family: var(--ff-body);
 }
 
 .nav__logo-r {
@@ -548,7 +564,7 @@ button { cursor:pointer; border:none; background:none; font:inherit; }
    ============================================================ */
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
 }
 
