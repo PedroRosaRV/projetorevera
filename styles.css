@@ -258,6 +258,12 @@ button { cursor:pointer; border:none; background:none; font:inherit; }
   flex-shrink: 0;
 }
 
+.nav__logo-text em {
+  font-family: var(--ff-heading);
+  font-style: italic;
+  font-weight: 400;
+}
+
 .nav__logo-r {
   display: flex;
   align-items: center;
