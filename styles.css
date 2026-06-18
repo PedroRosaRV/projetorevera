@@ -258,17 +258,6 @@ button { cursor:pointer; border:none; background:none; font:inherit; }
   flex-shrink: 0;
 }
 
-.nav__logo-text em {
-  font-family: var(--ff-heading);
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  margin-right: 0.25em;
-  color: var(--clr-gold-dark);
-}
-
-.header.scrolled .nav__logo-text em { color: var(--clr-gold); }
-
 .nav__logo-r {
   display: flex;
   align-items: center;
@@ -389,7 +378,7 @@ button { cursor:pointer; border:none; background:none; font:inherit; }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(155deg, var(--clr-offwhite) 0%, var(--clr-beige) 60%, var(--clr-beige-dark) 100%);
+  background: var(--clr-white);
 }
 
 .hero__bg { display: none; }
