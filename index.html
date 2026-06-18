@@ -24,7 +24,7 @@
   <header class="header" id="header">
     <nav class="nav container">
       <a href="#inicio" class="nav__logo" aria-label="Clínica Revera">
-        <span class="nav__logo-r">R</span>
+        <img src="logo.jpg" alt="Clínica Revera" class="nav__logo-img" />
         <span class="nav__logo-text">Clínica Revera</span>
       </a>
 
@@ -32,6 +32,7 @@
         <li><a href="#inicio" class="nav__link active">Início</a></li>
         <li><a href="#sobre" class="nav__link">Sobre</a></li>
         <li><a href="#servicos" class="nav__link">Serviços</a></li>
+        <li><a href="#planos" class="nav__link">Planos</a></li>
         <li><a href="#equipe" class="nav__link">Equipe</a></li>
         <li><a href="#contato" class="nav__link">Contato</a></li>
         <li>
@@ -113,20 +114,6 @@
               Nossa missão é clara: tratar cada paciente com individualidade, ciência e respeito.
               Porque você merece o melhor.
             </p>
-            <div class="about__stats">
-              <div class="about__stat">
-                <span class="about__stat-num">+8.000</span>
-                <span class="about__stat-label">Pacientes atendidos</span>
-              </div>
-              <div class="about__stat">
-                <span class="about__stat-num">12+</span>
-                <span class="about__stat-label">Anos de experiência</span>
-              </div>
-              <div class="about__stat">
-                <span class="about__stat-num">98%</span>
-                <span class="about__stat-label">Satisfação dos pacientes</span>
-              </div>
-            </div>
           </div>
 
           <div class="about__visual animate-fade-left">
@@ -187,14 +174,14 @@
             <div class="service-card__icon">
               <i class="fa-solid fa-microscope"></i>
             </div>
-            <h3 class="service-card__title">Exames e Diagnósticos</h3>
+            <h3 class="service-card__title">Consulta + Imagem</h3>
             <p class="service-card__text">
-              Laboratório clínico próprio com processamento ágil de exames de sangue, urina,
-              imagem e muito mais. Resultados digitais com praticidade e segurança para apoiar
-              seu médico na melhor decisão terapêutica.
+              Consulta médica completa com exame de imagem já incluso no mesmo valor — tudo
+              realizado diretamente em nossa unidade. Sem deslocamentos adicionais, sem filas
+              em outros locais. Praticidade e economia para você e sua família.
             </p>
             <a
-              href="https://wa.me/5511987654321?text=Olá%2C%20gostaria%20de%20informações%20sobre%20exames."
+              href="https://wa.me/5511987654321?text=Olá%2C%20gostaria%20de%20informações%20sobre%20consulta%20com%20imagem."
               class="service-card__link"
               target="_blank"
               rel="noopener"
@@ -209,9 +196,9 @@
             </div>
             <h3 class="service-card__title">Rejuvenescimento</h3>
             <p class="service-card__text">
-              Procedimentos estéticos e de medicina antiaging com tecnologias de última geração:
-              bioestimuladores, toxina botulínica, preenchimentos, lasers e tratamentos faciais
-              e corporais realizados por especialistas certificados.
+              Procedimentos estéticos e de medicina antiaging realizados por especialistas
+              certificados, com foco em resultados naturais e seguros. Tratamentos
+              personalizados para face e corpo em um ambiente clínico de alto padrão.
             </p>
             <a
               href="https://wa.me/5511987654321?text=Olá%2C%20gostaria%20de%20saber%20sobre%20os%20procedimentos%20de%20rejuvenescimento."
@@ -297,6 +284,99 @@
       </div>
     </section>
 
+    <!-- ===================== PLANOS DE ADESÃO ===================== -->
+    <section class="plans section" id="planos">
+      <div class="container">
+        <div class="section__header animate-fade-up">
+          <span class="section__eyebrow">Cuide-se com regularidade</span>
+          <h2 class="section__title">Planos de Adesão</h2>
+          <p class="section__subtitle">
+            Assine um plano e tenha acesso a consultas, exames e procedimentos com mensalidade fixa —
+            sem surpresas na hora de cuidar da sua saúde.
+          </p>
+        </div>
+
+        <div class="plans__grid">
+
+          <article class="plan-card animate-fade-up delay-1">
+            <div class="plan-card__header">
+              <span class="plan-card__name">Essencial</span>
+              <div class="plan-card__price">
+                <span class="plan-card__currency">R$</span>
+                <span class="plan-card__value">---</span>
+                <span class="plan-card__period">/mês</span>
+              </div>
+              <p class="plan-card__desc">Ideal para quem busca acompanhamento clínico preventivo básico.</p>
+            </div>
+            <ul class="plan-card__features">
+              <li><i class="fa-solid fa-check"></i> 1 consulta clínica por mês</li>
+              <li><i class="fa-solid fa-check"></i> Exames laboratoriais básicos</li>
+              <li><i class="fa-solid fa-check"></i> Atendimento prioritário</li>
+              <li><i class="fa-solid fa-check"></i> Acesso ao histórico digital</li>
+              <li class="plan-card__feature--off"><i class="fa-solid fa-xmark"></i> Exames de imagem</li>
+              <li class="plan-card__feature--off"><i class="fa-solid fa-xmark"></i> Procedimentos estéticos</li>
+            </ul>
+            <a href="https://wa.me/5511987654321?text=Olá%2C%20tenho%20interesse%20no%20Plano%20Essencial." class="btn btn--outline-dark" target="_blank" rel="noopener">
+              Quero este plano
+            </a>
+          </article>
+
+          <article class="plan-card plan-card--featured animate-fade-up delay-2">
+            <div class="plan-card__badge">Mais escolhido</div>
+            <div class="plan-card__header">
+              <span class="plan-card__name">Completo</span>
+              <div class="plan-card__price">
+                <span class="plan-card__currency">R$</span>
+                <span class="plan-card__value">---</span>
+                <span class="plan-card__period">/mês</span>
+              </div>
+              <p class="plan-card__desc">Consulta + imagem em um único atendimento, sem sair da clínica.</p>
+            </div>
+            <ul class="plan-card__features">
+              <li><i class="fa-solid fa-check"></i> 2 consultas clínicas por mês</li>
+              <li><i class="fa-solid fa-check"></i> Exames laboratoriais completos</li>
+              <li><i class="fa-solid fa-check"></i> Exame de imagem incluso</li>
+              <li><i class="fa-solid fa-check"></i> Atendimento prioritário</li>
+              <li><i class="fa-solid fa-check"></i> Acesso ao histórico digital</li>
+              <li class="plan-card__feature--off"><i class="fa-solid fa-xmark"></i> Procedimentos estéticos</li>
+            </ul>
+            <a href="https://wa.me/5511987654321?text=Olá%2C%20tenho%20interesse%20no%20Plano%20Completo." class="btn btn--gold" target="_blank" rel="noopener">
+              Quero este plano
+            </a>
+          </article>
+
+          <article class="plan-card animate-fade-up delay-3">
+            <div class="plan-card__header">
+              <span class="plan-card__name">Premium</span>
+              <div class="plan-card__price">
+                <span class="plan-card__currency">R$</span>
+                <span class="plan-card__value">---</span>
+                <span class="plan-card__period">/mês</span>
+              </div>
+              <p class="plan-card__desc">Acesso completo à clínica, incluindo estética e rejuvenescimento.</p>
+            </div>
+            <ul class="plan-card__features">
+              <li><i class="fa-solid fa-check"></i> Consultas ilimitadas</li>
+              <li><i class="fa-solid fa-check"></i> Exames laboratoriais completos</li>
+              <li><i class="fa-solid fa-check"></i> Exames de imagem inclusos</li>
+              <li><i class="fa-solid fa-check"></i> Procedimentos estéticos com desconto</li>
+              <li><i class="fa-solid fa-check"></i> Check-up anual completo</li>
+              <li><i class="fa-solid fa-check"></i> Atendimento VIP prioritário</li>
+            </ul>
+            <a href="https://wa.me/5511987654321?text=Olá%2C%20tenho%20interesse%20no%20Plano%20Premium." class="btn btn--outline-dark" target="_blank" rel="noopener">
+              Quero este plano
+            </a>
+          </article>
+
+        </div>
+
+        <p class="plans__note animate-fade-up">
+          <i class="fa-solid fa-circle-info"></i>
+          Valores e coberturas detalhadas disponíveis mediante consulta. Entre em contato para montar o plano ideal para você ou sua família.
+        </p>
+      </div>
+    </section>
+
     <!-- ===================== EQUIPE ===================== -->
     <section class="team section section--beige" id="equipe">
       <div class="container">
@@ -312,12 +392,7 @@
 
           <article class="team-card animate-fade-up delay-1">
             <div class="team-card__img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
-                alt="Dr. Renato — Gestor Médico da Clínica Revera"
-                class="team-card__img"
-                loading="lazy"
-              />
+              <div class="team-card__img-placeholder"><i class="fa-solid fa-user-doctor"></i></div>
             </div>
             <div class="team-card__body">
               <h3 class="team-card__name">Dr. Renato</h3>
@@ -336,12 +411,7 @@
 
           <article class="team-card animate-fade-up delay-2">
             <div class="team-card__img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80"
-                alt="Dr. Paulo — Diretor Clínico da Clínica Revera"
-                class="team-card__img"
-                loading="lazy"
-              />
+              <div class="team-card__img-placeholder"><i class="fa-solid fa-user-doctor"></i></div>
             </div>
             <div class="team-card__body">
               <h3 class="team-card__name">Dr. Paulo</h3>
@@ -360,12 +430,7 @@
 
           <article class="team-card animate-fade-up delay-3">
             <div class="team-card__img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=600&q=80"
-                alt="Pedro Rosa — Organizador e Prestador da Clínica Revera"
-                class="team-card__img"
-                loading="lazy"
-              />
+              <div class="team-card__img-placeholder"><i class="fa-solid fa-user-doctor"></i></div>
             </div>
             <div class="team-card__body">
               <h3 class="team-card__name">Pedro Rosa</h3>
@@ -384,12 +449,7 @@
 
           <article class="team-card animate-fade-up delay-4">
             <div class="team-card__img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&w=600&q=80"
-                alt="Dra. Maria Cristiane — Prestadora da Clínica Revera"
-                class="team-card__img"
-                loading="lazy"
-              />
+              <div class="team-card__img-placeholder"><i class="fa-solid fa-user-doctor"></i></div>
             </div>
             <div class="team-card__body">
               <h3 class="team-card__name">Dra. Maria Cristiane</h3>
@@ -408,12 +468,7 @@
 
           <article class="team-card animate-fade-up delay-1">
             <div class="team-card__img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"
-                alt="Dr. Alberto — Prestador da Clínica Revera"
-                class="team-card__img"
-                loading="lazy"
-              />
+              <div class="team-card__img-placeholder"><i class="fa-solid fa-user-doctor"></i></div>
             </div>
             <div class="team-card__body">
               <h3 class="team-card__name">Dr. Alberto</h3>
@@ -586,7 +641,7 @@
               </div>
               <div>
                 <strong>Endereço</strong>
-                <p>Rua das Orquídeas, 450<br />Jardim São Paulo, Guarulhos/SP<br />CEP 07180-000</p>
+                <p>Rua Darcy Vargas, 339<br />Guarulhos/SP</p>
               </div>
             </div>
 
@@ -705,6 +760,7 @@
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre Nós</a></li>
           <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#planos">Planos de Adesão</a></li>
           <li><a href="#equipe">Equipe</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -724,7 +780,7 @@
       <div class="footer__contact-info">
         <h4 class="footer__nav-title">Contato</h4>
         <address>
-          <p><i class="fa-solid fa-location-dot"></i> Rua das Orquídeas, 450<br />Jardim São Paulo, Guarulhos/SP</p>
+          <p><i class="fa-solid fa-location-dot"></i> Rua Darcy Vargas, 339<br />Guarulhos/SP</p>
           <p><i class="fa-solid fa-phone"></i> <a href="tel:+551134567890">(11) 3456-7890</a></p>
           <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5511987654321" target="_blank" rel="noopener">(11) 98765-4321</a></p>
           <p><i class="fa-solid fa-envelope"></i> <a href="mailto:contato@clinicarevera.com.br">contato@clinicarevera.com.br</a></p>

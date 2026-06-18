@@ -250,6 +250,14 @@ button { cursor:pointer; border:none; background:none; font:inherit; }
   flex-shrink: 0;
 }
 
+.nav__logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
 .nav__logo-r {
   display: flex;
   align-items: center;
@@ -1198,6 +1206,153 @@ button { cursor:pointer; border:none; background:none; font:inherit; }
   .about__img { height:260px; border-radius:var(--radius-lg); }
   .about__img-wrapper { border-radius:var(--radius-lg); }
   .contact__map-wrapper { height:260px; }
+}
+
+/* ============================================================
+   TEAM PHOTO PLACEHOLDER
+   ============================================================ */
+.team-card__img-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, var(--clr-beige-dark) 0%, var(--clr-beige) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: var(--clr-gold-dark);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* ============================================================
+   PLANS
+   ============================================================ */
+.plans { background-color: var(--clr-offwhite); }
+
+.plans__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.plan-card {
+  background: var(--clr-white);
+  border: 2px solid var(--clr-beige-dark);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.plan-card--featured {
+  border-color: var(--clr-gold);
+  background: var(--clr-black);
+  color: var(--clr-white);
+  transform: scale(1.04);
+}
+
+.plan-card--featured:hover { transform: scale(1.04) translateY(-4px); }
+
+.plan-card__badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--clr-gold);
+  color: var(--clr-black);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.35rem 1.1rem;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.plan-card__name {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.plan-card--featured .plan-card__name { color: var(--clr-gold); }
+
+.plan-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-card__currency { font-size: var(--fs-base); opacity: 0.7; }
+.plan-card__value { font-size: var(--fs-4xl); font-weight: var(--fw-black); line-height: 1; }
+.plan-card__period { font-size: var(--fs-sm); opacity: 0.6; }
+
+.plan-card__desc {
+  font-size: var(--fs-sm);
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+.plan-card__features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.plan-card__features li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--fs-sm);
+}
+
+.plan-card__features .fa-check { color: var(--clr-gold); flex-shrink: 0; }
+.plan-card__features .fa-xmark { color: var(--clr-text-muted); flex-shrink: 0; }
+.plan-card__feature--off { opacity: 0.45; }
+
+.plan-card .btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.btn--outline-dark {
+  background: transparent;
+  color: var(--clr-black);
+  border: 2px solid var(--clr-black);
+}
+.btn--outline-dark:hover { background: var(--clr-black); color: var(--clr-white); }
+
+.plans__note {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: var(--fs-sm);
+  color: var(--clr-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.plans__note .fa-circle-info { color: var(--clr-gold); }
+
+@media (max-width: 900px) {
+  .plans__grid { grid-template-columns: 1fr; max-width: 440px; margin-inline: auto; }
+  .plan-card--featured { transform: none; }
+  .plan-card--featured:hover { transform: translateY(-4px); }
 }
 
 /* ============================================================
